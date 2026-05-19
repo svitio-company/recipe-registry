@@ -1,0 +1,4 @@
+registries:
+  - name: svitio
+    description: Svitio Spark registry for recipes
+    recipes: recipes
