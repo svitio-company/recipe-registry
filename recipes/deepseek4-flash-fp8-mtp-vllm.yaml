@@ -32,6 +32,7 @@ defaults:
   tokenizer_mode: deepseek_v4
   speculative_config: '{"method": "mtp", "num_speculative_tokens": 2}'
   compilation_config: '{"cudagraph_mode":"FULL_AND_PIECEWISE","custom_ops":["all"]}'
+  served_model_name: deepseek-v4-flash
 
 env:
   TILELANG_CLEANUP_TEMP_FILES: "1"
