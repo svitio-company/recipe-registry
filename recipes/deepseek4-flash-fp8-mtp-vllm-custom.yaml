@@ -19,6 +19,7 @@ defaults:
   max_num_seqs: 10
   block_size: 256
   served_model_name: deepseek-v4-flash
+  speculative_config: '{"method": "mtp", "num_speculative_tokens": 2}'
 
 env:
   TORCH_CUDA_ARCH_LIST: 12.1a
@@ -53,5 +54,6 @@ command: |
       --enable-auto-tool-choice \
       --reasoning-parser deepseek_v4 \
       --reasoning-config '{"reasoning_parser":"deepseek_v4","reasoning_start_str":"<think>","reasoning_end_str":"</think>"}' \
+      --speculative-config '{speculative_config}' \
       --default-chat-template-kwargs '{"thinking":true}' \
       --load-format safetensors
