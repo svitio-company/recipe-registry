@@ -2,7 +2,7 @@ recipe_version: "1"
 name: DeepSeek-V4-Flash (FlashInfer)
 description: DeepSeek V4 Flash FP8 on dual DGX Spark TP=2 with FlashInfer sampler and extended context
 model: deepseek-ai/DeepSeek-V4-Flash
-container: vllm-node-dsv4-b1c97ff068b23858a4759394f8d6c858d822c957
+container: vllm-node-dsv4-0e9bc3702
 min_nodes: 2
 cluster_only: true
 
