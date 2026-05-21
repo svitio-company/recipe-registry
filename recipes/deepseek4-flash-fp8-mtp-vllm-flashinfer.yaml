@@ -2,7 +2,7 @@ recipe_version: "1"
 name: DeepSeek-V4-Flash (FlashInfer)
 description: DeepSeek V4 Flash FP8 on dual DGX Spark TP=2 with FlashInfer sampler and extended context
 model: deepseek-ai/DeepSeek-V4-Flash
-container: vllm-node-dsv4
+container: vllm-node-dsv4-b1c97ff068b23858a4759394f8d6c858d822c957
 min_nodes: 2
 cluster_only: true
 
@@ -16,7 +16,7 @@ defaults:
   gpu_memory_utilization: 0.82
   max_model_len: 256000
   max_num_batched_tokens: 16384
-  max_num_seqs: 8
+  max_num_seqs: 4
   block_size: 256
   tokenizer: deepseek-ai/DeepSeek-V4-Flash
   served_model_name: deepseek-v4-flash
