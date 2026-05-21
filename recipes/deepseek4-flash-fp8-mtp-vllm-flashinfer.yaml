@@ -35,7 +35,6 @@ env:
   NCCL_IB_DISABLE: 0
   NCCL_DEBUG: WARN
   OMP_NUM_THREADS: 8
-  HF_TOKEN: ${HF_TOKEN}
 
 command: |
   vllm serve deepseek-ai/DeepSeek-V4-Flash \
